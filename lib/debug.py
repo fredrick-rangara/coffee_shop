@@ -29,6 +29,8 @@ print(f"\n--- Testing Relationships ---")
 print(f"Steve's Order count: {len(cust1.orders())} (Expected: 3)")
 print(f"Latte's Order count: {coffee1.num_orders()} (Expected: 3)")
 print(f"Latte's Average Price: {coffee1.average_price()} (Expected: 6.33 approx)")
+print(f"Dianna's Order count: {len(cust2.orders())} (Expected: 1)")
+print(f"Dianna's Total Spend: ${sum([o.price for o in cust2.orders()])}")
 
 # 4. Test Aggregation (Most Aficionado)
 # Steve spent $10 on Latte. Dianna spent $9 on Latte.

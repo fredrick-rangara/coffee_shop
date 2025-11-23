@@ -18,7 +18,7 @@ class Order:
             raise TypeError("Price must be a float")
         if not (1.00 <= value <= 10.00):
             raise ValueError("Price must be between 1.00 and 10.00")
-        self.price = value
+        self._price = value
     
     @property
     def customer(self):
